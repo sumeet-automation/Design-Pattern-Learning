@@ -6,14 +6,7 @@ interface Shape {
     double calculateArea();
 }
 
-class Rectangle implements Shape {
-    private final double length;
-    private final double breadth;
-
-    Rectangle(double length, double breadth) {
-        this.length = length;
-        this.breadth = breadth;
-    }
+record Rectangle(double length, double breadth) implements Shape {
 
     @Override
     public double calculateArea() {
@@ -21,13 +14,7 @@ class Rectangle implements Shape {
     }
 }
 
- class Circle implements Shape {
-    private final double radius;
-
-    Circle(double radius) {
-        this.radius = radius;
-    }
-
+record Circle(double radius) implements Shape {
      @Override
      public double calculateArea() {
          return Math.PI * radius * radius;
@@ -41,8 +28,8 @@ class AreaCalculator {
         this.shape = shape;
     }
 
-    public void calculateArea() throws Exception {
-        shape.calculateArea();
+    public void calculateArea(){
+        System.out.println(shape.calculateArea());
     }
 }
 
