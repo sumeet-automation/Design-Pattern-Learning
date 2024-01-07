@@ -1,0 +1,8 @@
+## Design Principles
+
+### DRY --> DON'T REPEAT YOURSELF
+### KISS --> KEEP IT SIMPLE, SILLY!
+### YAGNI --> YOU AREN'T GONNA NEED IT
+### SLAP --> SINGLE LEVEL OF ABSTRACTION PRINCIPLE
+### SOLID ---> 
+#### 
